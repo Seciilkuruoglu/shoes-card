@@ -1,0 +1,118 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    min-width:100vw;
+    font-family: "Poopins , sans-serif";
+}
+.main{
+    position:absolute;
+    background:white;
+    min-height:50vh;
+    min-width:100vh;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:1px solid black;
+    border-radius:15px;
+}
+.shoeimage{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.shoeimage img{
+    object-fit: cover; /* foto kalitesi bozulmaması için*/
+    object-position: center;
+    height:550px;
+    width:360px;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+.colors{
+    display:flex;
+    justify-content: space-evenly; /*aralarda eşit boşluk ve kapladığı divin kenarlarında eşit mesafe*/
+    align-items:center;
+    min-height:30vh;
+}
+.colors div{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    margin-bottom:50px;
+    cursor: pointer;
+    border:2px solid black;
+}
+.color::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    right:35%;
+    transform: translate(-50%, -50%);
+    height:600px;
+    width:2px;
+    border-right:1px solid rgba(0, 0, 0, 0.2);
+}
+.size{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 50vh;
+    min-height: 20vh;
+    right:0%;
+    text-align:center;
+}
+.prices{
+    padding: 0.5rem 2.2rem; /* sağ ve sol padding*/
+    width:50vh;
+    text-align:right;
+}
+.old{
+    text-decoration: line-through; /*üstüne çizgi çeker*/
+}
+.number{
+    display:grid;
+    grid-template-columns: repeat(3,80px); /*3 defa tekrar et ve 80px'lik boşluk bırak*/
+    row-gap: 10px; /*ayakkabı numaraları arası boşluk*/
+    justify-content: space-evenly;
+    margin-left: 30px;
+    padding:20px;
+}
+.size h2{
+    letter-spacing:2px; /*harfler arası boşluk*/
+    font-size:2rem;
+    font-weight:bold;
+    margin-left:30px;
+    margin-bottom:60px;
+}
+.number div{
+    padding:0.5rem 1rem;
+    border:1px solid black;
+    cursor:pointer;
+    font-weight: bolder;
+
+}
+.submit{
+    font-weight:bold;
+    margin:10% 30%;
+    display:flex;
+    justify-content: center;
+    width:250px;
+    font-size:1.2rem;
+    padding:1rem 0.5rem;
+    letter-spacing: 4px;
+    border:1px solid black;
+    cursor:pointer;
+    background:rgb(7, 7, 7);
+    color:white;
+    transition: 0.5s ease;
+}
+
+
