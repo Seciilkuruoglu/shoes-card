@@ -21,7 +21,7 @@ body{
     justify-content:space-around;
     align-items:center;
     border:1px solid black;
-    border-radius:15px;
+    border-radius:50px;
 }
 .shoeimage{
     display:flex;
@@ -48,7 +48,7 @@ body{
     border-radius:50%;
     margin-bottom:50px;
     cursor: pointer;
-    border:2px solid black;
+    border:1px solid black;
 }
 .color::after{
     content:"";
@@ -70,7 +70,8 @@ body{
     text-align:center;
 }
 .prices{
-    padding: 0.5rem 2.2rem; /* sağ ve sol padding*/
+    padding-right:35px;
+    padding-top:12px;
     width:50vh;
     text-align:right;
 }
@@ -83,11 +84,11 @@ body{
     row-gap: 10px; /*ayakkabı numaraları arası boşluk*/
     justify-content: space-evenly;
     margin-left: 30px;
-    padding:20px;
+    padding:5px;
 }
 .size h2{
-    letter-spacing:2px; /*harfler arası boşluk*/
-    font-size:2rem;
+    /*harfler arası boşluk*/
+    font-size:1.8rem;
     font-weight:bold;
     margin-left:30px;
     margin-bottom:60px;
@@ -100,14 +101,12 @@ body{
 
 }
 .submit{
-    font-weight:bold;
-    margin:10% 30%;
+    margin:10% 25%;
     display:flex;
     justify-content: center;
-    width:250px;
+    width:200px;
     font-size:1.2rem;
     padding:1rem 0.5rem;
-    letter-spacing: 4px;
     border:1px solid black;
     cursor:pointer;
     background:rgb(7, 7, 7);
@@ -116,3 +115,5 @@ body{
 }
 
 
+
+   
